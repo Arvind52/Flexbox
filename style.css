@@ -1,0 +1,115 @@
+body{background-color: grey;}
+
+.container{max-width: 80%;
+           margin: auto;
+           background-color: #FFF;
+           box-sizing: border-box;
+           padding: 5px;
+           margin-bottom: 10px;}
+
+.form-row{
+     padding: 10px 0;
+     display: flex;	
+}
+
+.form-row input{
+	flex: 1;
+}
+/*.form-row label{flex: 1;}, if given the property it will take equal width with input*/
+
+.column-layout{display: flex;
+              justify-content: space-between;}
+
+.main-column{width: 40%;
+             order: 2;}
+
+.sidebar-1{width: 25%;
+           order: 1;}
+
+.sidebar-2{width: 25%;
+           order: 3;}
+
+.call-outs-container{
+	max-width: 80%;
+	margin: 40px auto 0 auto;
+} /*flex-start, flex-end and center are also properties of align-items, stretch is the default value*/ 
+
+.call-out{
+	box-sizing: border-box;
+	padding: 20px;
+	margin-bottom: 20px;
+  flex-basis: 30%;
+}   
+
+@media (min-width: 900px){
+  .call-outs-container{
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.boxes{background-color: #FFF;
+display: flex;
+width: 80%;
+margin: 40px auto 0 auto;
+box-sizing: border-box;
+padding: 30px 40px;
+flex-wrap: wrap;
+justify-content: space-around;}
+
+.number{
+  width: 150px;
+  height: 100px;
+  background-color: red;
+  color: #FFF;
+  line-height: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 20px;} 
+
+  .banner{
+    height: 400px;
+    max-width: 700px;
+    margin: 40px auto 40px auto;
+    background-color: #2a2a2a;
+    display: flex;
+  }
+
+  .center-me{
+    color: #FFF;
+    font-size: 50px;
+    margin: auto;
+  }
+
+  .equal-height-columns{
+    max-width: 80%;
+    background-color: #FFF;
+    margin: auto;
+    display: flex;
+  }
+
+ .first{flex: 1;}
+ 
+ .second{flex: 1;
+         display: flex;
+         flex-direction: column;
+         background-color: yellow;}
+
+ .a{background-color: red;
+    flex: 1;}
+
+ .b{background-color: green;
+     flex: 1;}
+
+/*
+  .call-out{
+	margin-right: 40px;
+  }
+
+  .call-out:last-child {margin-right: 0;}
+*/
+
+.call-out:nth-child(1) {background-color: #c0dbe2;}
+.call-out:nth-child(2) {background-color: #cdf1c3;}
+.call-out:nth-child(3) {background-color: #ccc9da;}
